@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>
             {/* Hero Section */}
-            <div className="w-full h-screen md:[h=800px] sm:[h-600px] py-4 px-10 sm:px-2 md:px-4 bg-[#FBEBB5]">
+            <div className="w-full h-screen  sm:[h-600px] py-4 md:[h-1000px] px-10 sm:px-2 md:px-4 bg-[#FBEBB5]">
                 <div className="max-w-7xl flex flex-col lg:flex-row items-center justify-between mx-20">
                  <div className="text-center lg:text-left">
                    <h1 className=" text-5xl sm:text-xl md:text-5xl text-center font-bold ">Rocket Single 
@@ -14,7 +14,7 @@ export default function Home() {
                      </div>
                  </div>
                  <div className="mt-8 lg:mt-0">
-                     <Image src='/bg1.png' width={0} height={0} alt="single seater" className="flex justify-around items-center w-[850px] h-[900px]:" sizes="100%"></Image>
+                     <Image src='/bg1.png' width={0} height={0} alt="single seater" className="flex justify-around items-center w-[650px] h-[700px]:" sizes="100%"></Image>
                  </div>
                 </div>
             </div>
