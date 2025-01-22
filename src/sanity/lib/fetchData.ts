@@ -1,4 +1,4 @@
-import { client } from "@/sanity/lib/client";
+import { client } from "./client";
 
 // Fetch Product Data
 export const FetchProductsData = async () => {
@@ -9,7 +9,7 @@ export const FetchProductsData = async () => {
       summary,
       discountedPrice,
       price,
-      image,
+      "image": image.asset->url,  // Ensure that we get the image URL
       colors,
       sizeQuantities,
       totalItems,
@@ -18,6 +18,7 @@ export const FetchProductsData = async () => {
     }`;
 
     const data = await client.fetch(query);
+    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching from Sanity:", error);
@@ -25,16 +26,4 @@ export const FetchProductsData = async () => {
   }
 };
 
-// Home Component
-import Home from "./components/Home";
 
-export default async function Homepage() {
-  const products = await FetchProductsData();
-  console.log(products);
-
-  return (
-    <div>
-      <Home />
-    </div>
-  );
-}

@@ -19,16 +19,16 @@ export default function Header() {
                         {/* Navigation Section */}
                         <nav>
                             <div className="sm:hidden md:flex flex-wrap justify-center gap-6">
-                                <Link href="/" className="hover:text-gray-600 text-xl  md:text-xl font-semibold active:scale-90 transition-transform">
+                                <Link href="/" className="hover:text-gray-600 text-xl  md:text-2xl font-semibold active:scale-90 transition-transform">
                                     Home
                                 </Link>
-                                <Link href="shop" className="hover:text-gray-600 text-xl md:text-xl font-semibold active:scale-90 transition-transform">
+                                <Link href="shop" className="hover:text-gray-600 text-xl md:text-2xl font-semibold active:scale-90 transition-transform">
                                     Shop
                                 </Link>
-                                <Link href="about" className="hover:text-gray-600 text-xl md:text-xl font-semibold active:scale-90 transition-transform">
+                                <Link href="about" className="hover:text-gray-600 text-xl md:text-2xl font-semibold active:scale-90 transition-transform">
                                     About
                                 </Link>
-                                <Link href="contact" className="hover:text-gray-600 text-xl md:text-xl font-semibold active:scale-90 transition-transform">
+                                <Link href="contact" className="hover:text-gray-600 text-xl md:text-2xl font-semibold active:scale-90 transition-transform">
                                     Contact
                                 </Link>
                             </div>
@@ -41,9 +41,11 @@ export default function Header() {
                             </Link>
                             <IoSearch className="hover:text-gray-600 text-xl lg:text-3xl cursor-pointer" />
                             <FaRegHeart className="hover:text-gray-600 text-xl lg:text-3xl cursor-pointer" />
+                            <Link href="/cart">
                             <GrCart className="hover:text-gray-600 text-xl lg:text-3xl cursor-pointer" />
+                            </Link>
                         </div>
-                        <button className="md:hidden text-gray-800">☰</button>
+                        {/* <button className="md:hidden text-gray-800">☰</button> */}
                     </div>
                 </header>
             </div>

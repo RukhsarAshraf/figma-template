@@ -18,9 +18,9 @@ export default function About() {
                     </p>
                 </span>
             </section>
-            <section className=" bg-slate-500 py-10 px-14">
+            <section className="bg-orange-100 py-10 px-14">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <Image src="/Asgaard8.png" alt="Asgaard Sofa" width={600} height={400} className="w-full max-w-[750px] h-auto" />
+                    <Image src="/Group 185.png" alt="" width={600} height={400} className="w-full max-w-[750px] h-auto" />
                     <div>
                         <h2 className="text-3xl sm:text-xl md:text-3xl lg:text-3xl font-bold mb-2">Our Core Mission</h2>
                         <p className="text-xl sm:text-xl md:text-xl lg:text-2xl">Welcome to <span className="text-2xl font-semibold">FurniSphere</span>, where craftsmanship meets creativity to redefine the art of furnishing your spaces. Established in <span className="text-xl font-semibold">2024</span>, we take pride in offering a diverse range of elegant, durable, and stylish furniture tailored to meet the evolving tastes of our customers.Our dedicated team of artisans, designers, and customer service professionals works tirelessly to ensure your shopping experience is seamless and enjoyable. Whether you’re looking for a cozy sofa, a sturdy dining table, or bespoke solutions for your space, we are here to bring your vision to life.</p>

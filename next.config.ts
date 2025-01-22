@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
+/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['cdn.sanity.io'], // Allow Sanity CDN for images
+  },
 };
 
 export default nextConfig;

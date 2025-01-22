@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -38,23 +39,25 @@ export default function Home() {
                          <h1 className="font-semibold sm:text-xl md:text-4xl text-4xl">Top Picks For You</h1>
                          <p className=" text-xl sm:text-xl md:text-xl text-center">Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.</p> 
                     </div>
-                         <div className="flex justify-around gap-4 md:gap-6 lg:gap-8 py-10 bg-[#FFFFFF]">
-                             <div className="bg-[#FFFFFF]"><Image src='/img4.png' width={0} height={0} alt="bg" className="flex justify-between py-4 items-center w-[200px] h-[150px]:" sizes="100%"></Image>                            
-                            <p className=" text-xl sm:text-xl md:text-xl text-center">Trenton modulor sofa_3</p>                           
-                            <p className="text-xl sm:text-xl md:text-xl font-semibold">Rs. 25,000.00</p>                           
-                        </div>
-                        <div className="bg-[#FFFFFF]"><Image src='/chair5.png' width={0} height={0} alt="bg"       className="flex justify-between py-8 items-center w-[200px] h-[200px]:" sizes="100%"></Image>
-                           <p className="text-xl sm:text-xl md:text-xl text-center">Granite dining table with</p>
+                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 p-5 bg-[#FFFFFF]">
+                             <div className="bg-[#FFFFFF]">
+                                <Image src='/img4.png' width={0} height={0} alt="bg" className="flex justify-between py-4 items-center w-[200px] h-[150px]:" sizes="100%"></Image>                            
+                               <p className=" text-xl sm:text-xl md:text-xl">Trenton modulor sofa_3</p>                           
+                                <p className="text-xl sm:text-xl md:text-xl font-semibold">Rs. 25,000.00</p>                           
+                            </div>
+                              <div className="bg-[#FFFFFF]">
+                                <Image src='/chair5.png' width={0} height={0} alt="bg"       className="flex justify-between py-8 items-center w-[200px] h-[200px]:" sizes="100%"></Image>
+                              <p className="text-xl sm:text-xl md:text-xl">Granite dining table with</p>
                            <p>dining chair</p>
                            <p className="text-xl sm:text-xl md:text-xl font-semibold">Rs. 25,000.00</p>
                         </div>
                         <div className="bg-[#FFFFFF]"><Image src='/Outdoortble6.png' width={0} height={0} alt="bg" className="flex justify-between py-2 items-center w-[200px] h-[150px]:" sizes="100%"></Image>
-                            <p className="text-xl sm:text-xl md:text-xl text-center">Outdoor bar table and</p>
+                            <p className="text-xl sm:text-xl md:text-xl">Outdoor bar table and</p>
                             <p> stool</p>
                             <p className="text-xl sm:text-xl md:text-xl font-semibold">Rs. 25,000.00</p>
                         </div>
                         <div className="bg-[#FFFFFF]"><Image src='/mirror7.png' width={0} height={0} alt="bg" className="flex justify-between py-8 items-center w-[200px] h-[200px]:" sizes="100%"></Image>
-                             <p className="text-xl sm:text-xl md:text-xl text-center">Plain console with teak </p> <p> mirror</p>
+                             <p className="text-xl sm:text-xl md:text-xl">Plain console with teak </p> <p> mirror</p>
                              <p className="text-xl sm:text-xl md:text-xl font-semibold">Rs. 25,000.00</p>
                              </div>
                         </div>
@@ -70,7 +73,7 @@ export default function Home() {
                     <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">New Arrivals</h1>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">Asgaard Sofa</h1>
                     <button className="inline-block border mt-4 px-6 py-2 text-2xl text-center font-semibold rounded hover:bg-slate-500 text-black border-black">
-                    Order Now
+                     <Link href="/product.tsx">Order Now</Link>
                     </button>
                 </div> 
                 </div>
