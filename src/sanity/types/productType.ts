@@ -1,23 +1,24 @@
-import { Key } from "readline";
-
+import { Key } from "react"; // "readline" se "react" mein change kiya, kyunki `Key` React ke liye relevant hai.
 
 export interface Product {
-    _id:string,
-    title:string,
-    _type:"product";
-    image : {
-        _type : 'image';
-        asset : {
-            _ref : string;
-            _type : 'reference';
-        };
-    }[];
-    featured: boolean;
-    colors?: any, index: Key | null | undefined;
-    price: number;
-    summary?:string;
-    slug : {
-        _type : "string"
-        current : string
-    }
+  _id: string;
+  title: string;
+  _type: "product";
+  image: {
+    _type: "image";
+    asset: {
+      _ref: string;
+      _type: "reference";
+    };
+  },
+  featured: boolean;
+  colors?: string[]; // Assume ki colors ek string array hain (e.g., ["red", "blue"]).
+  index: Key | null; // `undefined` already implied hota hai optional fields mein.
+  price: number;
+  summary?: string;
+  slug: {
+    _type: "string";
+    current: string;
+  }[];
+  
 }
