@@ -4,6 +4,7 @@ export interface Product {
   _id: string;
   title: string;
   _type: "product";
+  quantity: number; // Add the quantity property
   image: {
     _type: "image";
     asset: {

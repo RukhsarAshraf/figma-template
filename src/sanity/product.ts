@@ -56,13 +56,6 @@ export const product: SchemaTypeDefinition = {
       },
     },
     {
-      name: "colors",
-      type: "array",
-      title: "Colors",
-      description: "Available colors for the product.",
-      of: [{ type: "string" }],
-    },
-    {
       name: "sizeQuantities",
       type: "array",
       title: "Size Quantities",
